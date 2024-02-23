@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("assets/pexels-chan-walrus-958545.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container{
+    width: 100%;
+}
+nav {
+  width: 100%;
+  height: 65px;
+  background-color: #000000;
+  position: fixed;
+  z-index: 1;
+}
+.nav-container {
+  width: 20%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-container ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-container ul a{
+    text-decoration: none;
+    color: white;
+    font-family: montserrat;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.nav-container ul a:hover{
+    color: blue;
+}
+.hamburgur{
+    color: white;
+    font-size: 25px;
+    display: none;
+}
+input[type="checkbox"]{
+    display: none;
+}
+
+@media screen and (max-width:400px) {
+    nav{
+        display: flex;
+        align-items: center;
+    }
+    .nav-container ul{
+        display: none;
+        position: absolute;
+        top: 60px;
+
+        background-color: #000000;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        height: 120px;
+        width: 100%;
+    }
+    .hamburgur{
+        display: block;
+        margin-left: 10px;
+    }
+    input[type="checkbox"]:checked~.nav-container ul{
+        display: block;
+    }
+
+}
+
+
+.section-1{
+    width: 100%;
+    height: 265px;
+
+}
+.section-1-div{
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-1-div input{
+    width: 500px;
+    height: 20px;
+    font-family: montserrat;
+    padding: 10px;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    background-color: #fff;
+}
+.section-1-div button{
+    width: 80px;
+    height: 40px;
+    border-radius: 0 30px 30px 0;
+    border: 1px solid black;
+    outline: 1px;
+    cursor: pointer;
+    padding: 0 10px;
+    background-color: #000;
+    font-weight: 700;
+    font-family: montserrat;
+    color: #fff;
+    transition: background-color 1s,border 1s;
+}
+.section-1-div button:hover{
+    background-color: teal;
+    border: 1px solid teal;
+}
+
+.section-2{
+    width: 100%;
+}
+.section-2-container{
+    display: flex;
+    justify-content: center;
+    gap: 39px;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.section-2-card{
+    width: 230px;
+    height: 230px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: .3s;
+    box-shadow: #00000059 0 5px 15px;
+    transition: transform 1s;
+}
+.section-2-card:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+}
+.card-img{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-head{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+.card-head h4{
+    margin-left: 10px;
+    font-family: montserrat;
+}
+
+.card-button{
+    width: 100%;
+    height: 15%;
+}
+.card-button button{
+    padding: 5px;
+    background-color: #80808096;
+    text-align: center;
+    border: none;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 1s,color 1s;
+}
+.card-button button:hover{
+    background-color: black;
+    color: white;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: #000;
+}
